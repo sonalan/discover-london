@@ -1,0 +1,137 @@
+.bg-uk-navy {
+    background-color: #012169!important;
+    color: #ffffff;
+}
+
+.bg-uk-navy a{
+    color: #ffffff;
+}
+
+.bg-uk-navy .nav-link.active {
+    background: #c8102e;
+}
+
+.bg-uk-navy .navbar-toggler {
+
+    border: #efefef solid 1px;
+}
+
+.bg-uk-navy .navbar-toggler .navbar-toggler-icon{
+    background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.85%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") ;
+}
+
+    /* Add a black background color to the top navigation */
+.topNav {
+
+    background-color: #012169;
+    color: #efefef;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top:0;
+    z-index: 999;
+    position: relative;
+
+}
+
+.topNav ul{
+
+}
+
+
+/* Style the links inside the navigation bar */
+.topNav a {
+
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topNav a:hover {
+    background-color: #c8102e;
+    color: #efefef;
+}
+
+/* Add an active class to highlight the current page */
+.topNav a.active {
+    background-color: #c8102e;
+    color: #efefef;
+}
+
+/** toggle Menu */
+.toggleMenu{
+    position: absolute;
+    right: 20px;
+    top:20px;
+    width: 20px;
+    display: none;
+    z-index: 9999;
+    cursor: pointer;
+    color: #efefef;
+
+
+}
+
+@media only screen and (min-width: 768px) {
+    .topNav ul li {
+        float: left;
+        list-style: none;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .topNav ul li {
+        clear: both;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .topNav ul{
+        display: none!important;
+    }
+
+    .topNav ul.show{
+        display: block!important;
+    }
+
+
+}
+
+@media only screen and (max-width: 900px) {
+    .toggleMenu{
+        display: block!important;
+
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .topNav ul li a {
+        padding: 14px 8px;
+        font-size: 13px;
+    }
+}
+
+.serviceContainer{
+
+    position: absolute;
+    width: 100%;
+    margin-top: 20px;
+    z-index: 99999;
+}
+.serviceItem{
+    background: #fff;
+    color: #000;
+}
+
+.cardItem{
+    display: block;
+    background: #fff;
+    float: left;
+    min-height: 300px;
+    overflow: visible;
+}
