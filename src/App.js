@@ -40,13 +40,13 @@ function App() {
       <div className={"serviceContainer"}>
         <div className={"container"}>
             <div className={"row"}>
-                <h1 className={"page-title"}>Discover London</h1>
+                <h1 className="page-title text-white">Discover London</h1>
             </div>
             <div className={"row"}>
-                {services.loading&& <Spinner spinnerType="primary" />
+                {services.loading&& <div className="text-center"><Spinner spinnerType="warning" /></div>
 
                 }
-                {services.list&& <Servicelist  services={services.list} serviceModes={services.modes} />}
+                {services.list&& <Servicelist  services={services.list} />}
             </div>
         </div>
         </div>
